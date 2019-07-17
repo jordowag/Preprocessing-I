@@ -56,4 +56,148 @@ table {
 html, body {
     height: 100%;
 }
+.flex(@justify-content){
+	display:flex;
+	justify-content:@justify-content;
+}
 
+.center(@size){
+	margin: auto;
+	width:@size;
+}
+@font: 'Montserrat', sans-serif;
+@border: 2px solid blue;
+#container {
+	background-color:skyblue;
+	font-family: @font;
+	.center(90%);
+	margin-top:1%;
+	header {
+		background-color:pink;
+		.flex(center);
+		@media only screen and (max-width:500px){
+			flex-direction:column;
+		}
+		img {
+			height:20%;
+			margin: 1% 0;
+		}
+		#title {	
+			margin:1%;
+			h1 {
+				font-size:3rem;
+			}
+			em {
+				font-size:1.8rem;
+				font-style:italic;
+			}
+			hr {
+				color:lightgray;
+			}
+			p {
+				font-size:1.6rem;
+			}
+		}
+	}
+	nav {
+		.flex(space-evenly);
+		flex-direction:column;
+		margin-left: 1%;
+		height: 60%;
+		a {
+			text-decoration:none;
+			color:brown;
+		}
+		@media only screen and (max-width:500px){
+			display:none;
+		}
+	}
+	#about {
+		width:60%;
+		margin: 2% 0 2% 1%;
+		h2 {
+			margin-bottom:2%;
+		}
+		@media only screen and (max-width:500px){
+			.center(80%);
+		}
+	}
+
+	h2 {
+		font-size:2rem;
+	}
+
+	#experience-main {
+		border-top: @border;
+		border-bottom: @border;
+		.flex(center);
+		.center(100%);
+		margin-bottom: 2%;
+		@media only screen and (max-width:500px){
+			flex-direction:column;
+		}
+		#skills, #experience {
+			width: 50%;	
+			margin: 1%;
+		}
+		#skills {
+			.flex(center);
+			text-align:right;
+			@media only screen and (max-width:500px){
+				flex-direction:column;
+			}
+		}
+		#experience {
+			.flex(flex-end);
+			flex-direction:row-reverse;
+			@media only screen and (max-width:500px){
+				flex-direction:column;
+			}
+		}
+		img { 
+			height: 55%;
+			@media only screen and (max-width:500px){
+				width:100%;
+			}
+		}
+		.text-container {
+			width: 50%;
+			height: 1em;
+			@media only screen and (max-width:500px){
+				width:100%;
+			}
+		}
+		ul {
+			margin-top: 5%;
+			margin-left: 10%;
+			list-style:square;
+			line-height:1.1;
+			@media only screen and (max-width:500px){
+				margin-left:20%;
+			}
+		}
+	}
+	footer {
+		#contact-info {
+			.flex(flex-start);
+			img {
+				width:20%;
+			}
+			line-height:1.4;
+			margin: 0 0 1% 1%;
+			@media only screen and (max-width:500px){
+				flex-direction:column;
+			}
+		}
+		#copyright {
+			display:block;
+			padding:1% 0;
+			text-align:center;
+			background-color:black;
+			color:white;
+		}
+		.text-container {
+			margin-left:1%;
+		}
+	}
+}

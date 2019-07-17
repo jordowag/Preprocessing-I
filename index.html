@@ -4,16 +4,83 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Mega Man </title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div id="container">
+    <header>
+      <img src="img/megaman.jpg" alt="Mega Man"/>
+      <div id="title">
+        <h1>Mega Man<br><em>The Blue Bomber</em></h1>
+        <p>Achieving world peace is my dream.</p>
+      </div>
+      <div id="sidebar">
+        <nav>
+          <a href="#title">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#experience-main">Experience</a>
+          <a href="#contact-info">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <section id="about">
+
+      <h2>About Me</h2>
+      <p>
+        Born in 20XX, Dr. Thomas Light created me and my sister Roll to help out in the lab. I was Dr. Light's lab assistant and Roll helped with housekeeping. We were the first line of robots with advanced AI, with abilities to make our own decisions based on orders and direcitons.
+      </p>
+      <p>
+        Dr. Light created industrial robots to help society. However, Dr. Wily took control of these robots for his own goal: world domination. I stepped up and asked Dr. Light to equip me for battle in order to fight against Dr. Wily. Ever since then, I have been an advocate for justice and peace, hoping that one day robots and humans can live together in harmony. 
+      </p>
+    </section>
+    <section id="experience-main">
+      <div id="skills">
+        <img src="img/slide.png" alt="Mega Man sliding"/>
+        <div class="text-container">
+          <h2>Skills</h2>
+          <ul>
+            <li>Variable Weapons System - Able to adapt to any environment and steal weapons of my enemies</li>
+            <li>Dash - Can slide at high speeds through small spaces</li>
+            <li>Friendly - Easy to communicate with and open to feedback</li>
+          </ul>
+        </div>
+      </div>
+      <div id="experience">
+        <img src="img/mettaur.png" alt="Mettaur"/>
+        <div class="text-container">
+          <h2>Experience</h2>
+          <ul>
+            <li>Saving the World over 11 times</li>
+            <li>Laboratory Assistant to Dr. Light</li>
+            <li><a href="https://github.com/jordowag/responsive-web-design-I" target="_blank">Creating Responsive Web Pages</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="contact-info">
+        <img src="img/megaman2.jpg" href="Another Mega Man">
+        <div class="text-container">
+          <h2>Contact Info</h2>
+          <p>Email: <em>megaman@gmail.com</em></p>
+          <p><a>Twitter: <a href="http://twitter.com/megaman" target="_blank">@megaman</a></p>
+          <address> 
+            Address: <br>
+            9000 South Monkey Drive <br>
+            USA, The Earth 20011 <br>
+            (206)-981-1234
+          </address>
+        </div>
+      </div>
+        <p id="copyright">Copyright Dr. Light Labs 2019</p>
+    </footer>
+  </div>
 </body>
 </html>
