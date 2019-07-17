@@ -7,7 +7,7 @@
   <title>Mega Man </title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -16,22 +16,22 @@
 <body>
   <div id="container">
     <header>
+      <img src="img/megaman.jpg" alt="Mega Man"/>
       <div id="title">
-        <h1>Mega Man - The Blue Bomber</h1>
-        <img src="img/megaman.jpg" alt="Mega Man"/>
+        <h1>Mega Man<br><em>The Blue Bomber</em></h1>
         <p>Achieving world peace is my dream.</p>
       </div>
       <div id="sidebar">
         <nav>
-          <a href="#">Home</a>
-          <a href="#">About Me</a>
-          <a href="#">Experience</a>
-          <a href="#">Twitter</a>
+          <a href="#title">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#experience-main">Experience</a>
+          <a href="#contact-info">Contact</a>
         </nav>
       </div>
     </header>
     <section id="about">
-      <img src="img/megaman2.jpg" href="Another Mega Man">
+
       <h2>About Me</h2>
       <p>
         Born in 20XX, Dr. Thomas Light created me and my sister Roll to help out in the lab. I was Dr. Light's lab assistant and Roll helped with housekeeping. We were the first line of robots with advanced AI, with abilities to make our own decisions based on orders and direcitons.
@@ -65,16 +65,21 @@
       </div>
     </section>
     <footer>
-      <h2>Contact Info</h2>
-        <p>Email: <em>megaman@gmail.com</em></p>
-        <p><a>Twitter: <a href="http://twitter.com/megaman" target="_blank">@megaman</a></p>
-        <p> 
-          Address: <br>
-          9000 South Monkey Drive <br>
-          USA, The Earth 20011 <br>
-        </p>
-        <p id="copyright">Copyright Dr.          (206)-981-1234
- Light Labs 2019</p>
+      <div id="contact-info">
+        <img src="img/megaman2.jpg" href="Another Mega Man">
+        <div class="text-container">
+          <h2>Contact Info</h2>
+          <p>Email: <em>megaman@gmail.com</em></p>
+          <p><a>Twitter: <a href="http://twitter.com/megaman" target="_blank">@megaman</a></p>
+          <address> 
+            Address: <br>
+            9000 South Monkey Drive <br>
+            USA, The Earth 20011 <br>
+            (206)-981-1234
+          </address>
+        </div>
+      </div>
+        <p id="copyright">Copyright Dr. Light Labs 2019</p>
     </footer>
   </div>
 </body>

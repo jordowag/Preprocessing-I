@@ -1,1 +1,294 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+#container {
+  background-color: skyblue;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  width: 90%;
+  margin-top: 1%;
+}
+#container header {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  #container header {
+    flex-direction: column;
+  }
+}
+#container header img {
+  height: 20%;
+  margin: 1% 0;
+}
+#container header #title {
+  margin: 1%;
+}
+#container header #title h1 {
+  font-size: 3rem;
+}
+#container header #title em {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+#container header #title hr {
+  color: lightgray;
+}
+#container header #title p {
+  font-size: 1.6rem;
+}
+#container nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 1%;
+  height: 60%;
+}
+#container nav a {
+  text-decoration: none;
+  color: brown;
+}
+@media only screen and (max-width: 500px) {
+  #container nav {
+    display: none;
+  }
+}
+#container #about {
+  width: 60%;
+  margin: 2% 0 2% 1%;
+}
+#container #about h2 {
+  margin-bottom: 2%;
+}
+@media only screen and (max-width: 500px) {
+  #container #about {
+    margin: auto;
+    width: 80%;
+  }
+}
+#container h2 {
+  font-size: 2rem;
+}
+#container #experience-main {
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 2%;
+}
+@media only screen and (max-width: 500px) {
+  #container #experience-main {
+    flex-direction: column;
+  }
+}
+#container #experience-main #skills,
+#container #experience-main #experience {
+  width: 50%;
+  margin: 1%;
+}
+#container #experience-main #skills {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+}
+@media only screen and (max-width: 500px) {
+  #container #experience-main #skills {
+    flex-direction: column;
+  }
+}
+#container #experience-main #experience {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 500px) {
+  #container #experience-main #experience {
+    flex-direction: column;
+  }
+}
+#container #experience-main img {
+  height: 55%;
+}
+@media only screen and (max-width: 500px) {
+  #container #experience-main img {
+    width: 100%;
+  }
+}
+#container #experience-main .text-container {
+  width: 50%;
+}
+@media only screen and (max-width: 500px) {
+  #container #experience-main .text-container {
+    width: 100%;
+  }
+}
+#container #experience-main ul {
+  margin-top: 5%;
+  margin-left: 10%;
+  list-style: square;
+  line-height: 1.1;
+}
+@media only screen and (max-width: 500px) {
+  #container #experience-main ul {
+    margin-left: 20%;
+  }
+}
+#container footer #contact-info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 1% 1%;
+}
+#container footer #contact-info img {
+  width: 20%;
+}
+@media only screen and (max-width: 500px) {
+  #container footer #contact-info {
+    flex-direction: column;
+  }
+}
+#container footer #copyright {
+  display: block;
+  padding: 1% 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+#container footer .text-container {
+  margin-left: 1%;
+}
